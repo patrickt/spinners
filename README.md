@@ -4,4 +4,4 @@
 [![Hackage](https://img.shields.io/hackage/v/spinners.svg?logo=haskell)](https://hackage.haskell.org/package/spinners)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-ANSI-based terminal spinners.
+This package provides ANSI-based terminal spinners.

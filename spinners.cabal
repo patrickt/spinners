@@ -21,8 +21,10 @@ source-repository head
   location:            https://github.com/patrickt/spinners.git
 
 common common-options
-  build-depends:       base ^>= 4.13.0.0
-  
+  build-depends:       base ^>= 4.14.0.0
+                     , ansi-terminal
+                     , time
+
   ghc-options:         -Wall
                        -Wcompat
                        -Widentities
@@ -43,7 +45,8 @@ common common-options
 library
   import:              common-options
   hs-source-dirs:      src
-  exposed-modules:     Spinners
+  exposed-modules:     System.Console.Spinner
+                       System.Console.Spinner.Internal
 
 executable spinners
   import:              common-options

@@ -1,7 +1,11 @@
+{-# LANGUAGE BlockArguments #-}
 module Main (main) where
 
-import Spinners (someFunc)
+import System.Console.Spinner
+import Control.Monad
 
 
 main :: IO ()
-main = someFunc
+main = do
+  spin <- pipe
+  withHiddenCursor (forever (draw spin))
